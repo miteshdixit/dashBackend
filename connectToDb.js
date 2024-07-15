@@ -10,8 +10,8 @@ const DataBase = async () => {
 
   try {
     await mongoose.connect(mongoUri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
+      // useNewUrlParser: true,
+      // useUnifiedTopology: true
     });
     console.log('DB Connected!');
   } catch (error) {
