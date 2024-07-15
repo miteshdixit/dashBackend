@@ -25,7 +25,10 @@ app.use(cors());
 // }
 // importData();
 // // console.log(data)
-
+// Define the root route
+app.get('/', (req, res) => {
+  res.send('Welcome to my application!');
+});
 app.use("/api/data" , jsonRouter);
 
 DataBase();
